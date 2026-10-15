@@ -1,25 +1,9 @@
-import sys
-import os
-import sqlite3
-import json
-from datetime import datetime
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 import nltk
 
 ON_VERCEL = bool(os.environ.get("VERCEL"))
-
-if ON_VERCEL:
-    # Vercel's filesystem is read-only except /tmp
-    NLTK_DIR = "/tmp/nltk_data"
-    os.makedirs(NLTK_DIR, exist_ok=True)
-    nltk.data.path.append(NLTK_DIR)
-    # Copy this list from your setup_nltk.py so it matches exactly
-    for pkg in ["punkt", "punkt_tab", "stopwords", "wordnet", "omw-1.4",
-                "averaged_perceptron_tagger", "averaged_perceptron_tagger_eng",
-                "brown", "treebank"]:
-        nltk.download(pkg, download_dir=NLTK_DIR, quiet=True)
+_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Use NLTK data bundled in the repo (no runtime download, no /tmp space needed)
+nltk.data.path.insert(0, os.path.join(_BASE, "nltk_data"))
 
 from flask import Flask, render_template, request, redirect, url_for
 from nlp.pipeline import ChanakyaPipeline
