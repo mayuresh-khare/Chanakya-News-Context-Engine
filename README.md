@@ -89,7 +89,7 @@ CHANAKYA/
 ## Run Locally
 
 ```bash
-git clone https://github.com/<your-username>/chanakya-news-context-engine.git
+git clone https://github.com/mayuresh-khare/Chanakya-news-context-engine.git
 cd chanakya-news-context-engine
 
 python -m venv venv
