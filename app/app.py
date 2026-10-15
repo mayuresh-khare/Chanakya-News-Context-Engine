@@ -1,14 +1,21 @@
+import sys
+import os
+import sqlite3
+import json
+from datetime import datetime
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import nltk
 
 ON_VERCEL = bool(os.environ.get("VERCEL"))
-_BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Use NLTK data bundled in the repo (no runtime download, no /tmp space needed)
-nltk.data.path.insert(0, os.path.join(_BASE, "nltk_data"))
+nltk.data.path.insert(0, os.path.join(PROJECT_ROOT, "nltk_data"))
 
 from flask import Flask, render_template, request, redirect, url_for
 from nlp.pipeline import ChanakyaPipeline
-
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # By default Flask looks for a 'static' folder INSIDE the same directory
 # as this file (i.e. app/static/). Our static/ folder lives at the
