@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SCHEME_001",
+    "name": "Pradhan Mantri Kisan Samman Nidhi",
+    "aliases": ["PM-KISAN", "PM Kisan", "Kisan Samman Nidhi"],
+    "category": "Government Scheme",
+    "description": "Direct income support scheme providing Rs. 6000 per year to small and marginal farmer families, paid in three installments.",
+    "launched_year": 2019,
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "keywords": ["farmer", "income support", "agriculture", "kisan"]
+  },
+  {
+    "id": "SCHEME_002",
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act Scheme",
+    "aliases": ["MGNREGA", "NREGA", "MGNREGS"],
+    "category": "Government Scheme",
+    "description": "Guarantees 100 days of wage employment per year to rural households whose adult members volunteer for unskilled manual work.",
+    "launched_year": 2005,
+    "ministry": "Ministry of Rural Development",
+    "keywords": ["employment", "rural", "wage", "guarantee"]
+  },
+  {
+    "id": "SCHEME_003",
+    "name": "Ayushman Bharat",
+    "aliases": ["PM-JAY", "Pradhan Mantri Jan Arogya Yojana", "Ayushman Bharat Yojana"],
+    "category": "Government Scheme",
+    "description": "Health insurance scheme providing coverage up to Rs. 5 lakh per family per year for secondary and tertiary hospitalization.",
+    "launched_year": 2018,
+    "ministry": "Ministry of Health and Family Welfare",
+    "keywords": ["health", "insurance", "hospital", "medical"]
+  },
+  {
+    "id": "SCHEME_004",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "aliases": ["Ujjwala Yojana", "PMUY"],
+    "category": "Government Scheme",
+    "description": "Provides free LPG gas connections to women from below-poverty-line households to reduce reliance on unclean cooking fuels.",
+    "launched_year": 2016,
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "keywords": ["LPG", "gas connection", "women", "cooking fuel"]
+  },
+  {
+    "id": "SCHEME_005",
+    "name": "Swachh Bharat Mission",
+    "aliases": ["Clean India Mission", "SBM"],
+    "category": "Government Scheme",
+    "description": "Nationwide campaign to eliminate open defecation and improve solid waste management through sanitation infrastructure.",
+    "launched_year": 2014,
+    "ministry": "Ministry of Jal Shakti",
+    "keywords": ["sanitation", "cleanliness", "toilets", "waste management"]
+  },
+  {
+    "id": "SCHEME_006",
+    "name": "Pradhan Mantri Jan Dhan Yojana",
+    "aliases": ["Jan Dhan Yojana", "PMJDY"],
+    "category": "Government Scheme",
+    "description": "Financial inclusion scheme providing access to bank accounts, credit, insurance, and pension for unbanked citizens.",
+    "launched_year": 2014,
+    "ministry": "Ministry of Finance",
+    "keywords": ["financial inclusion", "bank account", "banking"]
+  },
+  {
+    "id": "SCHEME_007",
+    "name": "Digital India",
+    "aliases": ["Digital India Mission"],
+    "category": "Government Scheme",
+    "description": "Flagship program to transform India into a digitally empowered society through improved online infrastructure and digital literacy.",
+    "launched_year": 2015,
+    "ministry": "Ministry of Electronics and Information Technology",
+    "keywords": ["digital", "technology", "internet", "e-governance"]
+  },
+  {
+    "id": "SCHEME_008",
+    "name": "Startup India",
+    "aliases": ["Startup India Initiative"],
+    "category": "Government Scheme",
+    "description": "Initiative to promote entrepreneurship through funding support, tax exemptions, and simplified compliance for startups.",
+    "launched_year": 2016,
+    "ministry": "Ministry of Commerce and Industry",
+    "keywords": ["startup", "entrepreneurship", "business", "innovation"]
+  },
+  {
+    "id": "SCHEME_009",
+    "name": "Beti Bachao Beti Padhao",
+    "aliases": ["BBBP", "Save the Girl Child"],
+    "category": "Government Scheme",
+    "description": "Campaign to address declining child sex ratio and promote education and welfare of the girl child.",
+    "launched_year": 2015,
+    "ministry": "Ministry of Women and Child Development",
+    "keywords": ["girl child", "gender", "education", "women"]
+  },
+  {
+    "id": "SCHEME_010",
+    "name": "Pradhan Mantri Awas Yojana",
+    "aliases": ["PMAY", "Housing for All"],
+    "category": "Government Scheme",
+    "description": "Scheme aiming to provide affordable pucca housing to urban and rural poor by offering subsidies on home loans.",
+    "launched_year": 2015,
+    "ministry": "Ministry of Housing and Urban Affairs",
+    "keywords": ["housing", "affordable homes", "urban", "rural"]
+  },
+  {
+    "id": "SCHEME_011",
+    "name": "Atmanirbhar Bharat Abhiyan",
+    "aliases": ["Self-Reliant India Mission", "Atmanirbhar Bharat"],
+    "category": "Government Scheme",
+    "description": "Economic stimulus and policy package aimed at making India self-reliant through domestic manufacturing and reforms.",
+    "launched_year": 2020,
+    "ministry": "Ministry of Finance",
+    "keywords": ["self-reliant", "manufacturing", "economic package", "stimulus"]
+  },
+  {
+    "id": "SCHEME_012",
+    "name": "Production Linked Incentive Scheme",
+    "aliases": ["PLI Scheme", "PLI"],
+    "category": "Government Scheme",
+    "description": "Offers financial incentives to boost domestic manufacturing and attract investment across key sectors like electronics and pharma.",
+    "launched_year": 2020,
+    "ministry": "Ministry of Commerce and Industry",
+    "keywords": ["manufacturing", "incentive", "investment", "production"]
+  }
+]

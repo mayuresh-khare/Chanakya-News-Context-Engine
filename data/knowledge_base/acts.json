@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ACT_001",
+    "name": "Right to Information Act",
+    "aliases": ["RTI Act", "RTI"],
+    "category": "Act",
+    "description": "Grants citizens the right to request information from public authorities, promoting transparency and accountability in governance.",
+    "year_enacted": 2005,
+    "ministry": "Ministry of Personnel, Public Grievances and Pensions",
+    "keywords": ["transparency", "information", "governance", "accountability"]
+  },
+  {
+    "id": "ACT_002",
+    "name": "Citizenship Amendment Act",
+    "aliases": ["CAA"],
+    "category": "Act",
+    "description": "Amends citizenship eligibility rules for persecuted religious minorities from Afghanistan, Bangladesh, and Pakistan who entered India before 2015.",
+    "year_enacted": 2019,
+    "ministry": "Ministry of Home Affairs",
+    "keywords": ["citizenship", "immigration", "religious minorities"]
+  },
+  {
+    "id": "ACT_003",
+    "name": "Goods and Services Tax Act",
+    "aliases": ["GST Act", "GST"],
+    "category": "Act",
+    "description": "Unified indirect tax law that replaced multiple central and state taxes with a single tax structure across India.",
+    "year_enacted": 2017,
+    "ministry": "Ministry of Finance",
+    "keywords": ["tax", "GST", "indirect tax", "taxation"]
+  },
+  {
+    "id": "ACT_004",
+    "name": "Information Technology Act",
+    "aliases": ["IT Act", "IT Act 2000"],
+    "category": "Act",
+    "description": "Provides legal recognition for electronic transactions and addresses cybercrime and data protection in India.",
+    "year_enacted": 2000,
+    "ministry": "Ministry of Electronics and Information Technology",
+    "keywords": ["cybercrime", "electronic", "digital law", "data"]
+  },
+  {
+    "id": "ACT_005",
+    "name": "National Investigation Agency Act",
+    "aliases": ["NIA Act"],
+    "category": "Act",
+    "description": "Established the National Investigation Agency as India's central counter-terrorism law enforcement agency.",
+    "year_enacted": 2008,
+    "ministry": "Ministry of Home Affairs",
+    "keywords": ["counter-terrorism", "investigation", "national security"]
+  },
+  {
+    "id": "ACT_006",
+    "name": "Right of Children to Free and Compulsory Education Act",
+    "aliases": ["RTE Act", "Right to Education Act"],
+    "category": "Act",
+    "description": "Mandates free and compulsory education for children aged 6 to 14 years as a fundamental right.",
+    "year_enacted": 2009,
+    "ministry": "Ministry of Education",
+    "keywords": ["education", "children", "fundamental right", "schooling"]
+  },
+  {
+    "id": "ACT_007",
+    "name": "Companies Act",
+    "aliases": ["Companies Act 2013"],
+    "category": "Act",
+    "description": "Governs incorporation, regulation, and dissolution of companies in India, replacing the Companies Act of 1956.",
+    "year_enacted": 2013,
+    "ministry": "Ministry of Corporate Affairs",
+    "keywords": ["corporate", "business law", "companies", "regulation"]
+  },
+  {
+    "id": "ACT_008",
+    "name": "Consumer Protection Act",
+    "aliases": ["Consumer Protection Act 2019"],
+    "category": "Act",
+    "description": "Protects consumer rights and establishes authorities to address unfair trade practices and consumer complaints.",
+    "year_enacted": 2019,
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "keywords": ["consumer rights", "protection", "trade practices"]
+  },
+  {
+    "id": "ACT_009",
+    "name": "Bharatiya Nyaya Sanhita",
+    "aliases": ["BNS", "new criminal code"],
+    "category": "Act",
+    "description": "Replaced the Indian Penal Code as India's primary criminal law, effective from 2024.",
+    "year_enacted": 2023,
+    "ministry": "Ministry of Home Affairs",
+    "keywords": ["criminal law", "penal code", "justice"]
+  },
+  {
+    "id": "ACT_010",
+    "name": "Digital Personal Data Protection Act",
+    "aliases": ["DPDP Act", "Data Protection Act"],
+    "category": "Act",
+    "description": "Regulates the processing of digital personal data and establishes data protection obligations for organizations.",
+    "year_enacted": 2023,
+    "ministry": "Ministry of Electronics and Information Technology",
+    "keywords": ["data protection", "privacy", "digital data"]
+  }
+]

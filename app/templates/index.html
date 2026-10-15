@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANAKYA - AI News Context Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="brand-mark">
+                <span class="glyph">📜</span>
+                <h1>CHANAKYA</h1>
+            </div>
+            <p class="tagline">AI News Context Engine — understand the full story behind any news article</p>
+        </header>
+
+        <nav>
+            <a href="{{ url_for('index') }}" class="active">Analyze</a>
+            <a href="{{ url_for('history') }}">History</a>
+        </nav>
+
+        <main>
+            {% if error %}
+                <div class="error-box">{{ error }}</div>
+            {% endif %}
+
+            <form id="analyze-form" action="{{ url_for('analyze') }}" method="POST">
+                <label for="article_text">Paste a news article below:</label>
+                <textarea
+                    id="article_text"
+                    name="article_text"
+                    rows="14"
+                    placeholder="Paste the full text of a national or international news article here..."
+                    required
+                ></textarea>
+                <button type="submit">Analyze Article</button>
+            </form>
+
+            <div class="info-box">
+                <strong>What CHANAKYA gives you</strong>
+                <ul>
+                    <li>Event Summary — what actually happened</li>
+                    <li>Why is this in the News? — why it matters</li>
+                    <li>Background — historical context</li>
+                    <li>Connected Topics — related policies, ministries, categories</li>
+                    <li>Important Entities — people, organizations, and places involved</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>CHANAKYA &mdash; NLP Mini Project</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body>
+</html>

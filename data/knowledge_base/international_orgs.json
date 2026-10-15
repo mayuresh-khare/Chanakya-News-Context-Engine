@@ -1,0 +1,58 @@
+[
+  {
+    "id": "INTL_001",
+    "name": "United Nations",
+    "aliases": ["UN"],
+    "category": "International Organization",
+    "description": "Intergovernmental organization promoting international peace, security, and cooperation among 193 member states.",
+    "keywords": ["UN", "international peace", "diplomacy"]
+  },
+  {
+    "id": "INTL_002",
+    "name": "World Health Organization",
+    "aliases": ["WHO"],
+    "category": "International Organization",
+    "description": "UN specialized agency responsible for international public health coordination.",
+    "keywords": ["health", "WHO", "pandemic", "public health"]
+  },
+  {
+    "id": "INTL_003",
+    "name": "International Monetary Fund",
+    "aliases": ["IMF"],
+    "category": "International Organization",
+    "description": "International financial institution that promotes global monetary cooperation and financial stability.",
+    "keywords": ["IMF", "monetary policy", "global finance"]
+  },
+  {
+    "id": "INTL_004",
+    "name": "World Bank",
+    "aliases": ["World Bank Group"],
+    "category": "International Organization",
+    "description": "International financial institution providing loans and grants to developing countries for development projects.",
+    "keywords": ["development", "loans", "global finance"]
+  },
+  {
+    "id": "INTL_005",
+    "name": "World Trade Organization",
+    "aliases": ["WTO"],
+    "category": "International Organization",
+    "description": "International organization regulating trade between nations through negotiated agreements.",
+    "keywords": ["trade", "WTO", "tariffs", "global commerce"]
+  },
+  {
+    "id": "INTL_006",
+    "name": "Group of Twenty",
+    "aliases": ["G20"],
+    "category": "International Organization",
+    "description": "Forum of 20 major economies coordinating global economic and financial policy.",
+    "keywords": ["G20", "global economy", "summit"]
+  },
+  {
+    "id": "INTL_007",
+    "name": "South Asian Association for Regional Cooperation",
+    "aliases": ["SAARC"],
+    "category": "International Organization",
+    "description": "Regional intergovernmental organization promoting economic and regional integration in South Asia.",
+    "keywords": ["SAARC", "South Asia", "regional cooperation"]
+  }
+]

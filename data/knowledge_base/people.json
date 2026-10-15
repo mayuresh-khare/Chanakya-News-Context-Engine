@@ -1,0 +1,92 @@
+[
+  {
+    "id": "PERSON_001",
+    "name": "Narendra Modi",
+    "aliases": ["PM Modi", "Prime Minister Modi"],
+    "category": "Person",
+    "role": "Prime Minister of India",
+    "description": "Head of the Government of India, leader of the Bharatiya Janata Party (BJP).",
+    "keywords": ["prime minister", "PM", "BJP"]
+  },
+  {
+    "id": "PERSON_002",
+    "name": "Droupadi Murmu",
+    "aliases": ["President Murmu"],
+    "category": "Person",
+    "role": "President of India",
+    "description": "Head of State of India, holding the highest constitutional office.",
+    "keywords": ["president", "head of state"]
+  },
+  {
+    "id": "PERSON_003",
+    "name": "Nirmala Sitharaman",
+    "aliases": ["Finance Minister Sitharaman"],
+    "category": "Person",
+    "role": "Union Finance Minister",
+    "description": "Heads the Ministry of Finance, responsible for budget, taxation, and economic policy.",
+    "keywords": ["finance minister", "budget", "economy"]
+  },
+  {
+    "id": "PERSON_004",
+    "name": "Amit Shah",
+    "aliases": ["Home Minister Shah"],
+    "category": "Person",
+    "role": "Union Home Minister",
+    "description": "Heads the Ministry of Home Affairs, responsible for internal security and law and order.",
+    "keywords": ["home minister", "internal security"]
+  },
+  {
+    "id": "PERSON_005",
+    "name": "Subrahmanyam Jaishankar",
+    "aliases": ["S. Jaishankar", "External Affairs Minister Jaishankar"],
+    "category": "Person",
+    "role": "Union External Affairs Minister",
+    "description": "Heads the Ministry of External Affairs, overseeing India's foreign policy and diplomacy.",
+    "keywords": ["external affairs", "foreign minister", "diplomacy"]
+  },
+  {
+    "id": "PERSON_006",
+    "name": "Rajnath Singh",
+    "aliases": ["Defence Minister Singh"],
+    "category": "Person",
+    "role": "Union Defence Minister",
+    "description": "Heads the Ministry of Defence, overseeing national security and the armed forces.",
+    "keywords": ["defence minister", "armed forces"]
+  },
+  {
+    "id": "PERSON_007",
+    "name": "Piyush Goyal",
+    "aliases": ["Commerce Minister Goyal"],
+    "category": "Person",
+    "role": "Union Commerce and Industry Minister",
+    "description": "Heads the Ministry of Commerce and Industry, overseeing trade policy and exports.",
+    "keywords": ["commerce minister", "trade"]
+  },
+  {
+    "id": "PERSON_008",
+    "name": "Dhankhar",
+    "aliases": ["Jagdeep Dhankhar", "Vice President Dhankhar"],
+    "category": "Person",
+    "role": "Vice President of India",
+    "description": "Serves as Vice President and ex-officio Chairman of the Rajya Sabha.",
+    "keywords": ["vice president", "rajya sabha"]
+  },
+  {
+    "id": "PERSON_009",
+    "name": "Om Birla",
+    "aliases": ["Speaker Birla"],
+    "category": "Person",
+    "role": "Speaker of Lok Sabha",
+    "description": "Presides over the proceedings of the Lok Sabha, the lower house of Indian Parliament.",
+    "keywords": ["speaker", "lok sabha", "parliament"]
+  },
+  {
+    "id": "PERSON_010",
+    "name": "Ashwini Vaishnaw",
+    "aliases": ["Railway Minister Vaishnaw"],
+    "category": "Person",
+    "role": "Union Railways and IT Minister",
+    "description": "Heads the Ministry of Railways and Ministry of Electronics and Information Technology.",
+    "keywords": ["railway minister", "IT minister"]
+  }
+]

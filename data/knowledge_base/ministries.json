@@ -1,0 +1,98 @@
+[
+  {
+    "id": "MIN_001",
+    "name": "Ministry of Finance",
+    "aliases": ["Finance Ministry", "MoF"],
+    "category": "Ministry",
+    "description": "Responsible for economic policy, taxation, public expenditure, budget preparation, and financial regulation in India.",
+    "keywords": ["finance", "budget", "economy", "taxation"]
+  },
+  {
+    "id": "MIN_002",
+    "name": "Ministry of Home Affairs",
+    "aliases": ["Home Ministry", "MHA"],
+    "category": "Ministry",
+    "description": "Responsible for internal security, law and order, border management, and administration of union territories.",
+    "keywords": ["internal security", "law and order", "police", "border"]
+  },
+  {
+    "id": "MIN_003",
+    "name": "Ministry of External Affairs",
+    "aliases": ["Foreign Ministry", "MEA"],
+    "category": "Ministry",
+    "description": "Manages India's foreign relations, diplomacy, and international agreements.",
+    "keywords": ["diplomacy", "foreign relations", "international"]
+  },
+  {
+    "id": "MIN_004",
+    "name": "Ministry of Defence",
+    "aliases": ["Defence Ministry", "MoD"],
+    "category": "Ministry",
+    "description": "Oversees national defense policy, the armed forces, and defense production and procurement.",
+    "keywords": ["defense", "military", "armed forces", "security"]
+  },
+  {
+    "id": "MIN_005",
+    "name": "Ministry of Agriculture and Farmers Welfare",
+    "aliases": ["Agriculture Ministry"],
+    "category": "Ministry",
+    "description": "Formulates policies for agricultural development, farmer welfare, and food production.",
+    "keywords": ["agriculture", "farmers", "crops", "food production"]
+  },
+  {
+    "id": "MIN_006",
+    "name": "Ministry of Health and Family Welfare",
+    "aliases": ["Health Ministry", "MoHFW"],
+    "category": "Ministry",
+    "description": "Responsible for public health policy, disease control, and healthcare infrastructure across India.",
+    "keywords": ["health", "healthcare", "medical", "public health"]
+  },
+  {
+    "id": "MIN_007",
+    "name": "Ministry of Education",
+    "aliases": ["Education Ministry", "MoE"],
+    "category": "Ministry",
+    "description": "Oversees school education, higher education, and literacy programs nationwide.",
+    "keywords": ["education", "schools", "literacy", "universities"]
+  },
+  {
+    "id": "MIN_008",
+    "name": "Ministry of Law and Justice",
+    "aliases": ["Law Ministry"],
+    "category": "Ministry",
+    "description": "Handles legislative drafting, legal affairs, and administration of justice in India.",
+    "keywords": ["law", "justice", "legislation", "legal"]
+  },
+  {
+    "id": "MIN_009",
+    "name": "Ministry of Railways",
+    "aliases": ["Railway Ministry"],
+    "category": "Ministry",
+    "description": "Manages Indian Railways, one of the world's largest railway networks, including infrastructure and operations.",
+    "keywords": ["railways", "trains", "transport", "infrastructure"]
+  },
+  {
+    "id": "MIN_010",
+    "name": "Ministry of Commerce and Industry",
+    "aliases": ["Commerce Ministry"],
+    "category": "Ministry",
+    "description": "Formulates trade policy, promotes exports, and regulates industrial development.",
+    "keywords": ["trade", "commerce", "industry", "exports"]
+  },
+  {
+    "id": "MIN_011",
+    "name": "Reserve Bank of India",
+    "aliases": ["RBI", "Central Bank of India"],
+    "category": "Regulatory Body",
+    "description": "India's central bank, responsible for monetary policy, currency issuance, and banking regulation.",
+    "keywords": ["central bank", "monetary policy", "banking", "currency"]
+  },
+  {
+    "id": "MIN_012",
+    "name": "Election Commission of India",
+    "aliases": ["ECI"],
+    "category": "Constitutional Body",
+    "description": "Autonomous constitutional body responsible for administering free and fair elections in India.",
+    "keywords": ["elections", "voting", "democracy", "constitutional body"]
+  }
+]

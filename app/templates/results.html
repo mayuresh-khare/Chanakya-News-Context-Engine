@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANAKYA - Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="brand-mark">
+                <span class="glyph">📜</span>
+                <h1>CHANAKYA</h1>
+            </div>
+            <p class="tagline">Analysis Result</p>
+        </header>
+
+        <nav>
+            <a href="{{ url_for('index') }}">Analyze</a>
+            <a href="{{ url_for('history') }}">History</a>
+        </nav>
+
+        <main>
+            <details class="original-article">
+                <summary>View Original Article</summary>
+                <p>{{ result.article_text }}</p>
+            </details>
+
+            <div class="output-section">
+                <h2><span class="icon">📰</span> Event Summary</h2>
+                <p>{{ result.event_summary }}</p>
+            </div>
+
+            <div class="output-section">
+                <h2><span class="icon">💡</span> Why is this in the News?</h2>
+                <p>{{ result.why_in_news }}</p>
+            </div>
+
+            <div class="output-section">
+                <h2><span class="icon">📚</span> Background of the News</h2>
+                <p>{{ result.background }}</p>
+            </div>
+
+            <div class="output-section">
+                <h2><span class="icon">🔗</span> Connected Topics</h2>
+                {% if result.connected_topics %}
+                    <ul class="tag-list">
+                        {% for topic in result.connected_topics %}
+                            <li>{{ topic }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="muted">No connected topics found in the Knowledge Base.</p>
+                {% endif %}
+            </div>
+
+            <div class="output-section">
+                <h2><span class="icon">🏛️</span> Important Entities</h2>
+                {% if result.important_entities %}
+                    <table class="entity-table">
+                        <thead>
+                            <tr>
+                                <th>Entity</th>
+                                <th>Matched To</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for entity in result.important_entities %}
+                            <tr>
+                                <td>{{ entity.mention }}</td>
+                                <td>
+                                    {% if entity.kb_match %}
+                                        {{ entity.kb_match }}
+                                        <span class="match-tier">({{ entity.match_tier }})</span>
+                                    {% else %}
+                                        <span class="muted">No KB match</span>
+                                    {% endif %}
+                                </td>
+                                <td>{{ entity.category or '-' }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p class="muted">No entities detected.</p>
+                {% endif %}
+
+                {% if result.dates_mentioned %}
+                <p class="dates-line">
+                    <strong>Dates mentioned:</strong> {{ result.dates_mentioned | join(', ') }}
+                </p>
+                {% endif %}
+            </div>
+
+            <a href="{{ url_for('index') }}" class="button-link">Analyze Another Article</a>
+        </main>
+
+        <footer>
+            <p>CHANAKYA &mdash; NLP Mini Project</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body>
+</html>
