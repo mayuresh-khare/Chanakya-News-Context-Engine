@@ -1,13 +1,3 @@
-"""
-CHANAKYA - Flask Application
-Experiment 10 (Part 2): Web interface wrapping the NLP pipeline.
-
-Provides:
-  GET  /          - Home page with article input form
-  POST /analyze   - Runs the pipeline, saves result, shows the 5 outputs
-  GET  /history   - Lists previously analyzed articles
-"""
-
 import sys
 import os
 import sqlite3
@@ -15,6 +5,21 @@ import json
 from datetime import datetime
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import nltk
+
+ON_VERCEL = bool(os.environ.get("VERCEL"))
+
+if ON_VERCEL:
+    # Vercel's filesystem is read-only except /tmp
+    NLTK_DIR = "/tmp/nltk_data"
+    os.makedirs(NLTK_DIR, exist_ok=True)
+    nltk.data.path.append(NLTK_DIR)
+    # Copy this list from your setup_nltk.py so it matches exactly
+    for pkg in ["punkt", "punkt_tab", "stopwords", "wordnet", "omw-1.4",
+                "averaged_perceptron_tagger", "averaged_perceptron_tagger_eng",
+                "brown", "treebank"]:
+        nltk.download(pkg, download_dir=NLTK_DIR, quiet=True)
 
 from flask import Flask, render_template, request, redirect, url_for
 from nlp.pipeline import ChanakyaPipeline
@@ -32,7 +37,11 @@ app = Flask(
     static_url_path="/static"
 )
 
-DB_PATH = os.path.join(PROJECT_ROOT, "db", "chanakya.db")
+# On Vercel only /tmp is writable (and it is wiped on cold starts)
+if ON_VERCEL:
+    DB_PATH = "/tmp/chanakya.db"
+else:
+    DB_PATH = os.path.join(PROJECT_ROOT, "db", "chanakya.db")
 
 # Initialize the pipeline ONCE when the server starts (not per-request --
 # training the classifier and loading the KB every request would be slow)
@@ -42,6 +51,7 @@ pipeline = ChanakyaPipeline()
 
 def init_db():
     """Creates the analyses table if it doesn't already exist."""
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
@@ -59,6 +69,10 @@ def init_db():
     """)
     conn.commit()
     conn.close()
+
+
+# Runs on every start (locally and on Vercel, which never executes __main__)
+init_db()
 
 
 def save_analysis(article_text: str, outputs: dict) -> int:
@@ -162,5 +176,4 @@ def history():
 
 
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True, port=5001)
